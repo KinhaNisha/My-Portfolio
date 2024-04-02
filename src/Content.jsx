@@ -6,6 +6,7 @@ function createCard(data) {
     return <DisplayCard
         title={data.title}
         image={data.image}
+        link={data.link}
         desc={data.description}
     />
 }
@@ -13,7 +14,7 @@ function createCard(data) {
 const Content = () => {
 
     return (
-        <div>
+        <div className="main-containter">
             <div className="about">
                 <h2>About Me</h2>
                 <p>Hi, I'm Nisha.
