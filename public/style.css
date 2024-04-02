@@ -1,0 +1,93 @@
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: rgb(174, 250, 360);
+    padding: 16px 32px;
+    height: 250px;
+    text-align: center;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+}
+
+.header h1 {
+    color: black;
+    font-family: cursive;
+    font-weight: 200;
+    margin: 0; 
+}
+
+.header p {
+    font-size: 30px;
+    margin: 0; 
+}
+
+.footer {
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    background-color: #333; 
+}
+
+.footer p {
+    color: #ccc;
+    margin: 0;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    margin: 10px 30%;
+    display: inline-block;
+}
+.about h2 {
+    font-size: 30px;
+    text-align: center;
+    background-color: blue;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.greet-mess-box {
+    text-align: center;
+    margin-left: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.greet-mess {
+    color: green;
+    padding: 20px;
+    font-size: 50px;
+    text-decoration: underline;
+}
+
+#photo {
+    border-radius: 50%;
+    background-color: white;
+    border: 2px solid green;
+    width: 150px;
+    height: 150px;
+    margin-right: 20px; 
+}
+
+.dictionary {
+    background-color: red;
+
+}
+.container {
+    background-color: green;
+    /* width: 80%;
+    height: 10vh; */
+    padding: 10px;
+    text-align: center;
+
+}
