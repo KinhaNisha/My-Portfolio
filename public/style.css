@@ -25,6 +25,8 @@ body {
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    justify-content: first baseline;
 }
 
 .header h1 {
@@ -165,7 +167,7 @@ body {
 /* Media query for smaller screen sizes */
 @media only screen and (max-width: 600px) {
     .header {
-        padding: 16px 0px;
+        padding: 16px 16px;
         height: auto;
     }
 
