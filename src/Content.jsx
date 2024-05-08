@@ -18,7 +18,7 @@ const Content = () => {
         <div className="main-containter">
             <div className="about">
                 <h2>About Me</h2>
-                <p>Hi, I'm Nisha.
+                <div>Hi, I'm Nisha.
                     I am persuing my MCA from Indira Gandhi University, New Delhi.
                     <h3>Interests:</h3>
                     <p>I am interested in Full Stack Development.</p>
@@ -32,7 +32,7 @@ const Content = () => {
                         Learning new things.<br />
                         Travelling and Adventure.
                     </p>
-                </p>
+                </div>
             </div>
             <div className="about">
                 <h2>My Projects</h2>
