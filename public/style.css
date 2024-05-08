@@ -58,6 +58,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: #fdb1f4;
 }
 .about {
     width: 80%;
@@ -111,6 +112,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 20px;
+    background-color: rgb(208, 234, 242);
 }
 
 
