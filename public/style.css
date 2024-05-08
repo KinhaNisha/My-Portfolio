@@ -5,6 +5,18 @@ body {
     padding: 0;
 }
 
+.header, .header * {
+    margin: 0;
+    padding: 0;
+}
+.header, .header * {
+    box-sizing: border-box;
+}
+.header {
+    overflow-x: hidden;
+}
+
+
 .header {
     background-color: rgb(174, 250, 360);
     padding: 16px 32px;
@@ -52,6 +64,7 @@ body {
     margin: 10px;
     display: inline-block;
 }
+
 .about h2 {
     font-size: 30px;
     text-align: center;
@@ -86,16 +99,16 @@ body {
 }
 
 .dictionary {
-    max-height: 600px; /* Adjust the height as needed */
-    overflow-y: auto; /* Enables vertical scrolling */
-    overflow-x: hidden; /* Hides the horizontal scrollbar */
+    max-height: 600px;
+    overflow-y: auto;
+    overflow-x: hidden;
     padding: 15px;
     margin: 20px auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around; /* Optional, for aesthetic spacing */
-    gap: 20px; /* Optional, provides spacing between cards */
+    justify-content: space-around;
+    gap: 20px;
 }
 
 
@@ -111,16 +124,15 @@ body {
     border-radius: 8px;
     color: white;
     text-align: center;
-    height: 300px; /* Adjust based on your preference */
+    height: 300px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     transition: transform 0.2s;
 }
 
 .container:hover {
     transform: scale(1.05);
-    background-image: none; /* Hides the background image on hover */
-    /* Optionally, set a background color to be shown when the image is hidden */
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+    background-image: none;
+    background-color: rgba(0, 0, 0, 0.7); 
 }
 
 .container a {
@@ -145,7 +157,23 @@ body {
     font-size: 16px;
 }
 
-/* Making the link invisible but clickable */
 .container a {
-    background-color: rgba(0,0,0,0); /* Invisible */
+    background-color: rgba(0,0,0,0);
+}
+
+
+/* Media query for smaller screen sizes */
+@media only screen and (max-width: 600px) {
+    .header {
+        padding: 16px 0px;
+        height: auto;
+    }
+
+    .header h1 {
+        font-size: 24px;
+    }
+
+    .header p {
+        font-size: 20px; 
+    }
 }
