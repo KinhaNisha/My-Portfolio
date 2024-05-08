@@ -6,7 +6,7 @@ function DisplayCard(props) {
 
     // Dynamic style based on hover state
     const containerStyle = {
-        width: '30%',
+        width: '50%',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         margin: '20px',
@@ -16,20 +16,29 @@ function DisplayCard(props) {
         textAlign: 'center',
         transition: 'background 0.5s ease',
         backgroundImage: isHovered ? 'none' : `url(${props.image})`,
-        backgroundColor: isHovered ? 'rgba(0, 0, 0, 0.7)' : 'transparent', // Optional: background color when image is hidden
+        backgroundColor: isHovered ? 'rgba(0, 0, 0, 0.7)' : 'transparent',
+        cursor: 'pointer', 
     };
 
     return (
-        <div 
-            className="container" 
-            style={containerStyle}
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
+        <>
+        <a 
+            href={props.link} 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            style={{ textDecoration: 'none' }} // Remove default anchor underline
         >
-            <span>{props.title}</span>
-            <dd>{props.desc}</dd>
-            <a href={props.link} aria-label={`Learn more about ${props.title}`} target="_blank" rel="noopener noreferrer"></a>
-        </div>
+            <div 
+                className="container" 
+                style={containerStyle}
+                onMouseEnter={() => setIsHovered(true)}
+                onMouseLeave={() => setIsHovered(false)}
+            >
+                <span>{props.title}</span>
+                <dd>{props.desc}</dd>
+            </div>
+        </a>
+        </>
     );
 }
 

@@ -6,7 +6,7 @@ import Content from "./Content";
 function HomePage() {
    
     return (
-        <div>
+        <>
             <Header />
             <div>
                 <Content />
@@ -14,7 +14,7 @@ function HomePage() {
             <div>
                 <Footer />
             </div>
-        </div>
+        </>
     )
 };
 

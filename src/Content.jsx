@@ -14,6 +14,7 @@ function createCard(data) {
 const Content = () => {
 
     return (
+        <>
         <div className="main-containter">
             <div className="about">
                 <h2>About Me</h2>
@@ -23,7 +24,7 @@ const Content = () => {
                     <p>I am interested in Full Stack Development.</p>
                     <h3>My Skills:</h3>
                     <p>Node.js, Java Script, Express, React.js, C, C++, Python, My SQL.<br />
-                        I have good knowledge of Data Structure and Algorithms.<br />
+                        I have knowledge of Data Structure and Algorithms.<br />
                         I am a good learner.
                     </p>
                     <h3>Hobbies:</h3>
@@ -40,6 +41,7 @@ const Content = () => {
                 </dl>
             </div>
         </div>
+        </>
     )
 }
 
