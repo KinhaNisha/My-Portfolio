@@ -26,7 +26,7 @@ const Header = () => {
                 <div className="greet-mess-box">
                     <span className="greet-mess">{greet}</span>
                     <h1>Hi, I'm Nisha Kinha </h1>
-                    <p>Full Stack Developer</p>
+                    <p>Backend Developer</p>
                 </div>
             </div>
         </div>
