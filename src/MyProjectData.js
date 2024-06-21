@@ -7,7 +7,7 @@ const Projects = [
     },
     {
         "title": "Healthcare Management System",
-        "image": "https://github.com/KinhaNisha/HCMS-Frontend/blob/main/Screenshot%202024-05-08%20054357.png",
+        "image": "https://github.com/KinhaNisha/HCMS-Frontend/raw/main/Screenshot%202024-05-08%20054357.png",
         "link": "https://hcms-web.onrender.com/",
         "description": "Skills Used: ReactJS, JavaScript, HTML, CSS"
     },
